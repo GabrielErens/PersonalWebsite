@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Gabriel Erens Oosthuizen</title>
+    <link href="Styling Sheet.css" rel="stylesheet" type="text/css" />
+
+    <meta charset="utf-8" />
+    <!--Top button animation jquery-->
+    <script>
+        //Jquery back to top function and styling starts//
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topBtn").style.display = "block";
+            }
+            else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>       <!--Jquery back to top function and styling end-->
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>                              <!--Menubar starts-->
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">HOBBIES</a>        <!--drop down menu starts-->
+                    <div class="dropdown-content">
+                        <a href="Aviation.html">AVIATION</a>
+                        <a href="Technology.html">TECHNOLOGY</a>
+                        <a href="Sport.html">SPORT</a>
+                    </div>
+                </li>                                                                <!--drop down menu ends-->
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li style="float:right;margin-right:1%">
+                    <a href="https://www.Twitter.com">
+                        <img title="Twitter" alt="Twitter" src="pic/01_twitter1.png" width="20" height="20" />
+                    </a>
+                </li>
+                <li style="float:right;margin-right:1%">
+                    <a href="https://www.Facebook.com">
+                        <img title="Facebook" alt="Facebook" src="pic/02_facebook1.png" width="20" height="20" />
+                    </a>
+                </li>
+            </ul>
+        </nav>      <!--Menubar ends-->
+
+        <h1 style="">Inspiration Quotes</h1>
+        <div id="box">
+            <div>
+
+                <p style="text-align:center;
+                          color:#fff;
+                          font-size:1.2em">
+                    Below are a few quotes that have inspired me.
+
+                    <!--Imigase with insperational quotes-->
+                </p>
+                <img id="inspiration" style="margin:1%" src="Inspiration/absolutely.jpg" />
+                <img id="inspiration" style="margin:1%" src="Inspiration/do what is right.jpg" />
+                <img id="inspiration" style="margin:1%" src="Inspiration/Fear.jpg" />
+                <img id="inspiration" style="margin:1%" src="Inspiration/lookback.jpg" />
+                <img id="inspiration" style="margin:1%" src="Inspiration/my father say.jpg" />
+                <img id="inspiration" style="margin:1%" src="Inspiration/never give up.jpg" />
+                <img id="inspiration" style="margin:1%" src="Inspiration/one decision.jpg" />
+                <img id="inspiration" style="margin:1%" src="Inspiration/stand back up.jpg" />
+                <img id="inspiration" style="margin:1%" src="Inspiration/Theres aways.jpg" />
+                <img id="inspiration" style="margin:1%" src="Inspiration/want to be happy.jpg" />
+                <img id="inspiration" style="margin:1%" src="Inspiration/why worry.jpg" />
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>      <!--back to top button-->
+</body>
+
+</html>
+
+<footer><p id="fther">Go make a change, a real man stands for what he believes in. &copy;</p> </footer>     <!--footer-->
+

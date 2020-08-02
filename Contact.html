@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Gabriel Erens Oosthuizen</title>
+    <link href="Styling Sheet.css" rel="stylesheet" />
+
+    <meta charset="utf-8" />
+    <!--Top button animation jquery-->
+    <script>
+        //Jquery back to top function and styling starts//
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topBtn").style.display = "block";
+            }
+            else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>       <!--Jquery back to top function and styling starts-->
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>                              <!--Menubar starts-->
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">HOBBIES</a>        <!--drop down menu starts-->
+                    <div class="dropdown-content">
+                        <a href="Aviation.html">AVIATION</a>
+                        <a href="Technology.html">TECHNOLOGY</a>
+                        <a href="Sport.html">SPORT</a>
+                    </div>
+                </li>                                                                <!--drop down menu ends-->
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li style="float:right;margin-right:1%">
+                    <a href="https://www.Twitter.com">
+                        <img title="Twitter" alt="Twitter" src="pic/01_twitter1.png" width="20" height="20" />
+                    </a>
+                </li>
+                <li style="float:right;margin-right:1%">
+                    <a href="https://www.Facebook.com">
+                        <img title="Facebook" alt="Facebook" src="pic/02_facebook1.png" width="20" height="20" />
+                    </a>
+                </li>
+            </ul>
+        </nav>      <!--Menubar ends-->
+    </div>
+    <div id="box" style="padding:5%">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.882002080501!2d28.20924731460598!3d-25.675205983676076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfdecdfc8dbc25%3A0x2705d00cdb7d822e!2s255+Miriana+St%2C+Pretoria%2C+0129!5e0!3m2!1sen!2sza!4v1490468381336"
+                width="400" height="400" frameborder="0" style="float:right;background-color:#333;border:solid;border-color:orangered;margin-left:2%" allowfullscreen></iframe>
+
+        <form method="post" action="mailto:erensoosthuizen3@gmail.com" enctype="text/plain">
+            <fieldset style="border:solid;border-color:#ffffff;font-family:'Times New Roman', Times, serif;color:#ffffff;background-color:#333;margin-right:2%">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <labels for="fname">First Name:</labels>
+                    <input type="text" name="fname" id="fname" size="25" placeholder="Enter first name" required />
+                    <br />
+                    <label for="lname">Surname:</label>
+                    <input type="text" for="lname" id="lname" size="25" placeholder="Enter Surname" style="margin:1%;" required />
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Contact details</legend>
+                    <label for="cnum"> Cell number</label>
+                    <input type="tel" id="cnum" size="10" placeholder="Enter cell number" required />
+                    <label for="email">Email</label>
+                    <input type="email" id="email" size="30" placeholder="Enter email" required />
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>What do you think a man needs?</legend>
+                    <label for="manNeeds"></label>
+                    <textarea name="manNeeds" rows="5" size="30" placeholder="Please leave a coment or idea" required></textarea>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Gender</legend>
+                    <label for="gender"></label>
+                    <br />
+                    <input type="radio" name="gender" value="male" checked="checked" />Male
+                    <input type="radio" name="gender" value="female" />Female
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Date of birth</legend>
+                    <input type="date" />
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>What tec do you like</legend>
+                    <input type="checkbox" value="home" style="align-content:center" />Home
+                    <input type="checkbox" value="Car" style="align-content:center" />Car
+                    <input type="checkbox" value="Office" style="align-content:center" /> Office
+                </fieldset>
+                <br />
+                <fieldset>
+                    <input type="submit" value="Submit" />
+                    <input type="reset" value="clear" />
+                </fieldset>
+            </fieldset>
+        </form>
+    </div>
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+</body>
+
+</html>
+
+<footer><p id="fther">Go make a change, a real man stands for what he believes in. &copy;</p> </footer>
+

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Gabriel Erens Oosthuizen</title>
+    <link href="Styling Sheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <!--Top button animation jquery-->
+    <script>
+        //Jquery back to top function and styling starts//
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topBtn").style.display = "block";
+            }
+            else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>       <!--Jquery back to top function and styling end-->
+
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>                              <!--Menubar starts-->
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">HOBBIES</a>        <!--drop down menu starts-->
+                    <div class="dropdown-content">
+                        <a href="Aviation.html">AVIATION</a>
+                        <a href="Technology.html">TECHNOLOGY</a>
+                        <a href="Sport.html">SPORT</a>
+                    </div>
+                </li>                                                                <!--drop down menu ends-->
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li style="float:right;margin-right:1%">
+                    <a href="https://www.Twitter.com">
+                        <img title="Twitter" alt="Twitter" src="pic/01_twitter1.png" width="20" height="20" />
+                    </a>
+                </li>
+                <li style="float:right;margin-right:1%">
+                    <a href="https://www.Facebook.com">
+                        <img title="Facebook" alt="Facebook" src="pic/02_facebook1.png" width="20" height="20" />
+                    </a>
+                </li>
+            </ul>
+        </nav>      <!--Menubar ends-->
+    </div>
+    <div>
+        <h1>Sport</h1>
+        <p style="font-size:1.2em">
+            In my opinion sport is very important for what it brings to both athletes and spectators.
+            Not just because of the emotions that sport can generate within us but also the power that it has to unite people.
+            I have experienced this power twice in my lifetime where sport made a divided nation come together for one cause.
+        </p>
+
+        <div id="box">
+
+            <h2 id="sportImage"
+                style="letter-spacing:1em;
+                border:solid;
+                border-color:orangered;
+                background-color:#333;
+                text-align:center;
+                font-size:2em">
+                Rugby
+            </h2>
+
+            <div id="Sportdiv">
+                <div id="box">
+
+                    <img style="border:solid;border-color:orangered;width:50%" src="pic/images.jpg">
+
+                </div>
+                <div>
+                    <video style="float:right;margin:1%;border:solid;border-color:orangered;width:40%;height:40%" controls>
+                        <source src="Video/Rugby - Epic Skills.mp4" type="video/mp4" />
+                    </video>
+                    <div>
+                        <p style="text-align:left;color:#fff;font-size:1.2em">
+                            Of all the sport out there rugby is one of my favourite spectator sports to watch for
+                            it can be very entertaining and is played at a very high tempo.
+                            It is an absolute team sport for one person can let a whole team down.
+                            You rely completely on each other so that you have a chance to win the match.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>      <!--back to top button-->
+    </div>
+</body>
+
+</html>
+
+<footer><p id="fther">Go make a change, a real man stands for what he believes in. &copy;</p> </footer>     <!--footer-->

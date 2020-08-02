@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Gabriel Erens Oosthuizen</title>
+    <link href="Styling Sheet.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <!--Top button animation jquery-->
+    <script>
+        //Jquery back to top function and styling starts//
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topBtn").style.display = "block";
+            }
+            else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script><!--Jquery back to top function and styling end-->
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>                              <!--Menubar starts-->
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">HOBBIES</a>        <!--drop down menu starts-->
+                    <div class="dropdown-content">
+                        <a href="Aviation.html">AVIATION</a>
+                        <a href="Technology.html">TECHNOLOGY</a>
+                        <a href="Sport.html">SPORT</a>
+                    </div>
+                </li>                                                                <!--drop down menu ends-->
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li style="float:right;margin-right:1%">
+                    <a href="https://www.Twitter.com">
+                        <img title="Twitter" alt="Twitter" src="pic/01_twitter1.png" width="20" height="20" />
+                    </a>
+                </li>
+                <li style="float:right;margin-right:1%">
+                    <a href="https://www.Facebook.com">
+                        <img title="Facebook" alt="Facebook" src="pic/02_facebook1.png" width="20" height="20" />
+                    </a>
+                </li>
+            </ul>
+        </nav>      <!--Menubar ends-->
+
+    </div>
+    <div>
+        <h1>Aviation</h1>
+        <p style="font-size:1.2em">
+
+            An airplane is a powered,
+            fixed-wing aircraft that is propelled forward by thrust from a jet engine or propeller.
+            Airplanes come in a variety of sizes, shapes, and wing configurations.
+            The broad spectrum of uses for airplanes includes recreation, transportation of goods and people, military, and research.
+            Commercial aviation is a massive industry involving the flying of tens of thousands of passengers daily on airliners.
+            Most airplanes are flown by a pilot on board the aircraft, but some are designed to be remotely or computer-controlled.
+
+        </p> <!--Paragraph on why i love aviation-->
+
+        <div id="box">
+
+
+            <h2 id="Planeheading"
+                style="letter-spacing:1em;
+                border:solid;
+                border-color:orangered;
+                background-color:#333;
+                text-align:center;
+                font-size:2em">
+                Airplanes
+            </h2> <!--heding style and heading some planes-->
+
+            <div id="plane">
+                <div id="box">
+
+                    <img style="border:solid;border-color:orangered;float:left;width:60%;margin-left:20%;margin-bottom:5%" src="pic/p5pb14536909.jpg">      <!--picture of an helicopter-->
+                </div>
+                <div>
+                    <video style="float:right;margin:1%;border:solid;border-color:orangered;width:40%;height:40%" controls>
+                        <!--Style of video player-->
+                        <!--Aviasion Videos-->
+                        <source src="Video/Helicopter Life Canada.mp4" />
+                    </video>
+                </div>
+                <div>
+                    <p style="text-align:left;color:#fff;font-size:1.2em;">
+                        This video is a very good example of what it feels like to be a pilot <!--Paragraph on video-->
+                        and to live absolutely free.
+                    </p>
+
+
+                </div>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button> <!--back to top button-->
+    </div>
+</body>
+
+</html>
+
+<footer><p id="fther">Go make a change, a real man stands for what he believes in. &copy;</p> </footer> <!--footer-->

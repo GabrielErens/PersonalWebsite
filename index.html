@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gabriel Erens Oosthuizen</title>
+    <link href="Styling Sheet.css" rel="stylesheet" />
+
+    <meta charset="utf-8" />
+    <!--Top button animation jquery-->
+    <script>
+        //Jquery back to top function and styling starts//
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("topBtn").style.display = "block";
+            }
+            else {
+                document.getElementById("topBtn").style.display = "none";
+            }
+        }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+    </script><!--Jquery back to top function and styling end-->
+</head>
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>                              <!--Menubar starts-->
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">HOBBIES</a>        <!--drop down menu starts-->
+                    <div class="dropdown-content">
+                        <a href="Aviation.html">AVIATION</a>
+                        <a href="Technology.html">TECHNOLOGY</a>
+                        <a href="Sport.html">SPORT</a>
+                    </div>
+                </li>                                                                <!--drop down menu ends-->
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li style="float:right;margin-right:1%">
+                    <a href="https://www.Twitter.com">
+                        <img title="Twitter" alt="Twitter" src="pic/01_twitter1.png" width="20" height="20" />
+                    </a>
+                </li>
+                <li style="float:right;margin-right:1%">
+                    <a href="https://www.Facebook.com">
+                        <img title="Facebook" alt="Facebook" src="pic/02_facebook1.png" width="20" height="20" />
+                    </a>
+                </li>
+            </ul>
+        </nav>      <!--Menubar ends-->
+    </div>
+    <div>
+        <h1 style="margin-top:1%">Quotes to live by</h1>
+
+        <p style="letter-spacing:2px;line-height:2;font-size:1.2em;">
+
+            In life, what more can you ask for than to be real? To fulfill one’s potential instead of wasting
+            energy on attempting to actualize one’s dissipating image, which is not real and an expenditure of
+            one’s vital energy.
+            We have great work ahead of us, and it needs devotion and much, much energy.
+            To grow, to discover, we need involvement, which is something I experience every day — sometimes good,
+            sometimes frustrating.
+            No matter what, you must let your inner light guide you out of the darkness.
+            <br />
+            <br />
+            "Be like water making its way through cracks.
+            Do not be assertive, but adjust to the object, and you shall find a way around or through it.
+            If nothing within you stays rigid, outward things will disclose themselves.
+            Empty your mind, be formless. Shapeless, like water.
+            If you put water into a cup, it becomes the cup.
+            You put water into a bottle and it becomes the bottle.
+            You put it in a teapot, it becomes the teapot.
+            Now, water can flow or it can crash. Be water, my friend."
+        </p>
+
+        <h1>Hobbies</h1>
+        <div id="box" style="background-image:url(Image/K41BiL.jpg);background-size:100%">
+            <div>
+                <a href="Technology.html">
+                    <!--Technology image-->
+                    <img id="tecImage" style="margin-left:8%;
+                                              margin-right:8%;
+                                              float:left"
+                         src="pic/1.1_16.37_17.40_2.7-5-e1473172431296.jpg"
+                         title="Technology" />
+                </a>
+                <a href="Aviation.html">
+                    <!--Aviation image-->
+                    <img id="tecImage" style="margin-left:8%;
+                                    margin-right:8%;
+                                    float:left"
+                         src="pic/p5pb14536909.jpg"
+                         title="Aviation" />
+                </a>
+                <a href="Sport.html">
+                    <!--Sports image-->
+                    <img id="tecImage" style="margin-left:8%;
+                                       margin-right:8%;
+                                       float:left"
+                         src="pic/Reach_JDawe_SkyEpic01a.jpg"
+                         title="Sport" />
+                </a>
+            </div>
+        </div>
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>  <!--back to top button-->
+    </div>
+</body>
+</html>
+
+<footer><p id="fther">Go make a change, a real man stands for what he believes in. &copy;</p> </footer>  <!--footer-->
+
